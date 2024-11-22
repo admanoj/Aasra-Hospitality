@@ -59,7 +59,7 @@ const Dashboard = () => {
 
         {/* Right Section: Sign-In Button */}
         <div className="flex items-center">
-          <Link href="/register">
+          <Link href="../register">
             <Button className="bg-white text-black rounded-md hover:bg-gray-200 transition-colors w-20 text-base">
               Sign in
             </Button>

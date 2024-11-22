@@ -1,5 +1,5 @@
 "use client";
-import { DatePickerWithRange } from "@/components/datePicker/page";
+import BasicDateRangePicker from "@/components/dateRangePicker/page";
 import { Button } from "@/components/ui/button";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid"; // Import search icon from Heroicons
 import React from "react";
@@ -11,11 +11,12 @@ const Destination = () => {
         <div className="relative">
           <input
             placeholder="Search for Destination"
-            className="focus:outline-none bg-gray-200 hover:bg-gray-300 pl-10 pr-4 py-2 w-full rounded-md"
+            className="focus:outline-none bg-gray-200 hover:bg-gray-300 pl-10 pr-4 py-2 w-full rounded-md h-14 "
           />
           <MagnifyingGlassIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-700" />
         </div>
-        <DatePickerWithRange className="flex-1" />
+
+        <BasicDateRangePicker />
         <Button className="bg-blue-500 rounded-none hover:bg-gray-700">
           Find a Hotel
         </Button>
