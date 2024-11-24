@@ -3,6 +3,7 @@ import React from "react";
 import Dashboard from "./dashboard/page";
 import Destination from "./destination/page";
 import Join from "./join/page";
+import { ImagesSliderDemo } from "./manoj/page";
 
 const Homepage = () => {
   return (
@@ -10,6 +11,7 @@ const Homepage = () => {
       <Dashboard />
       <Destination />
       <Join />
+      <ImagesSliderDemo />
     </div>
   );
 };
