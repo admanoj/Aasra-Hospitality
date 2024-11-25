@@ -4,7 +4,9 @@ import Dashboard from "./dashboard/page";
 import Destination from "./destination/page";
 import Join from "./join/page";
 import { ImagesSliderDemo } from "./manoj/page";
-import Card from "./card/page";
+
+import Footer from "./footer/page";
+import HotelCard from "./card/page";
 
 const Homepage = () => {
   return (
@@ -15,7 +17,9 @@ const Homepage = () => {
       <div className="min-h-screen flex flex-col items-center justify-center p-3 bg-black shadow-md space-y-4">
         <ImagesSliderDemo />
       </div>
-      <Card />
+
+      <HotelCard />
+      <Footer />
     </div>
   );
 };

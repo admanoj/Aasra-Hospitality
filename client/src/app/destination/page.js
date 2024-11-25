@@ -1,9 +1,9 @@
 "use client";
 import { DatePickerWithRange } from "@/components/datePicker/page";
+import Dropnav from "@/components/dropnav";
 import { Button } from "@/components/ui/button";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid"; // Import search icon from Heroicons
 import React from "react";
-import Dropnav from "@/components/dropdown-nav";
 
 const Destination = () => {
   return (
@@ -21,10 +21,10 @@ const Destination = () => {
           <DatePickerWithRange className="flex-1" />
         </div>
         <div className="bg-yellow-300  mr-0 text-black-500 hover:bg-blue-500 hover:text-white hover:scale-105 !rounded">
-          <Dropnav/>
+          <Dropnav />
         </div>
         <div>
-          <Button className="bg-yellow-300  mr-0 text-black-500 hover:bg-blue-500 hover:text-white hover:scale-105 !rounded">
+          <Button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white font-medium py-2.5 px-8 rounded-lg transition-all duration-300 ease-in-out shadow-md hover:shadow-lg hover:from-blue-600 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 active:from-blue-700 active:to-blue-900">
             Find a Hotel
           </Button>
         </div>
