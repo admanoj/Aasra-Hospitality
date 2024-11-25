@@ -12,7 +12,9 @@ const Homepage = () => {
       <Dashboard />
       <Destination />
       <Join />
-      <ImagesSliderDemo />
+      <div className="min-h-screen flex flex-col items-center justify-center p-3 bg-black shadow-md space-y-4">
+        <ImagesSliderDemo />
+      </div>
       <Card />
     </div>
   );

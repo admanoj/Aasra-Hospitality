@@ -3,6 +3,7 @@ import { DatePickerWithRange } from "@/components/datePicker/page";
 import { Button } from "@/components/ui/button";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid"; // Import search icon from Heroicons
 import React from "react";
+import Dropnav from "@/components/dropdown-nav";
 
 const Destination = () => {
   return (
@@ -18,7 +19,9 @@ const Destination = () => {
         </div>
         <div className="flex">
           <DatePickerWithRange className="flex-1" />
-          <Button className="ml-4">Room and Guest</Button>
+        </div>
+        <div className="bg-yellow-300  mr-0 text-black-500 hover:bg-blue-500 hover:text-white hover:scale-105 !rounded">
+          <Dropnav/>
         </div>
         <div>
           <Button className="bg-yellow-300  mr-0 text-black-500 hover:bg-blue-500 hover:text-white hover:scale-105 !rounded">
