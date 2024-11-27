@@ -7,7 +7,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white font-sans">
+    <footer className="bg-black text-white font-sans">
       <div className="container mx-auto px-4 py-8 overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -108,7 +108,7 @@ const Footer = () => {
             <p className="text-sm mb-2">
               Subscribe to our newsletter for exclusive offers and updates.
             </p>
-            <form className="flex">
+            <form className="flex flex-col space-y-2">
               <input
                 type="email"
                 placeholder="Your email"

@@ -3,6 +3,7 @@ import React from "react";
 import Dashboard from "./dashboard/page";
 import Destination from "./destination/page";
 import Join from "./join/page";
+import Description from "./ImageDescription/description"
 import { ImagesSliderDemo } from "./manoj/page";
 
 import Footer from "./footer/page";
@@ -17,8 +18,10 @@ const Homepage = () => {
       <div className="min-h-screen flex flex-col items-center justify-center p-3 bg-black shadow-md space-y-4">
         <ImagesSliderDemo />
       </div>
-
-      <HotelCard />
+        <Description />
+      <div className="min-h-screen flex flex-col items-center justify-center p-1 bg-black shadow-md space-y-4">
+        <HotelCard />
+      </div>
       <Footer />
     </div>
   );
