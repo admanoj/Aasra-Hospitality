@@ -3,6 +3,7 @@ import { DatePickerWithRange } from "@/components/datePicker/page";
 import Dropnav from "@/components/dropnav";
 import { Button } from "@/components/ui/button";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid"; // Import search icon from Heroicons
+import Link from "next/link";
 import React from "react";
 
 const Destination = () => {
@@ -24,9 +25,11 @@ const Destination = () => {
           <Dropnav />
         </div>
         <div>
-          <Button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white font-medium py-2.5 px-8 rounded-lg transition-all duration-300 ease-in-out shadow-md hover:shadow-lg hover:from-blue-600 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 active:from-blue-700 active:to-blue-900">
-            Find a Hotel
-          </Button>
+          <Link href="/hotels">
+            <Button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white font-medium py-2.5 px-8 rounded-lg transition-all duration-300 ease-in-out shadow-md hover:shadow-lg hover:from-blue-600 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 active:from-blue-700 active:to-blue-900">
+              Find a Hotel
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
